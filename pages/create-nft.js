@@ -36,6 +36,7 @@ const CreateItem = () => {
   async function createItem() {
     const { name, description, price } = formInput;
     if (!name || !description || !price || !fileUrl) return;
+
     const data = JSON.stringify({
       name,
       description,
